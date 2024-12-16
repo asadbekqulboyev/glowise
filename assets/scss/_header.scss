@@ -1,0 +1,106 @@
+.header {
+    background: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 19px 0 15px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &_hamburger {
+        height: 30px;
+        width: 30px;
+        border-radius: 1px;
+        background: #EDF2F1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        padding: 9px 5px;
+        cursor: pointer;
+        display: none;
+        display: flex;
+
+        &.is-active {
+            &--first {
+                transform: rotate(45deg);
+            }
+
+            &--center {
+                display: none;
+            }
+
+            &--last {
+                transform: rotate(45deg);
+            }
+        }
+
+    }
+
+    
+    &_lists {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+        color: #373737;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        a{
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        color: #373737;
+        }
+    }
+
+    &_right {
+        display: flex;
+        align-items: center;
+        gap: 0 41px;
+        .header_phone {
+            font-size: 12px;
+            color: #373737;
+            font-weight: 500;
+        }
+        .header_icon {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+    }
+    .toggle_menu{
+        cursor: pointer;
+        .link_click{
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+    }
+    .subheader_lists{
+        display: flex;
+        position:relative;
+        flex-direction: column;
+
+        a{
+            background: #fff;
+            padding: 5px;
+            display: block;
+            position: absolute;
+            flex: 0 0 auto;
+            z-index: 231;
+        }
+    }
+    &_line {
+        width: 18px;
+        height: 2px;
+        background: #000;
+        display: block;
+    }
+}

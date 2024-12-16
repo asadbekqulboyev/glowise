@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Onest&display=swap");
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.header {
+  background: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 19px 0 15px;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_hamburger {
+  height: 30px;
+  width: 30px;
+  border-radius: 1px;
+  background: #EDF2F1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 9px 5px;
+  cursor: pointer;
+  display: none;
+  display: flex;
+}
+.header_hamburger.is-active--first {
+  transform: rotate(45deg);
+}
+.header_hamburger.is-active--center {
+  display: none;
+}
+.header_hamburger.is-active--last {
+  transform: rotate(45deg);
+}
+.header_lists {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  color: #373737;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}
+.header_lists a {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  color: #373737;
+}
+.header_right {
+  display: flex;
+  align-items: center;
+  gap: 0 41px;
+}
+.header_right .header_phone {
+  font-size: 12px;
+  color: #373737;
+  font-weight: 500;
+}
+.header_right .header_icon {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.header .toggle_menu {
+  cursor: pointer;
+}
+.header .toggle_menu .link_click {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.header .subheader_lists {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.header .subheader_lists a {
+  background: #fff;
+  padding: 5px;
+  display: block;
+  position: absolute;
+  flex: 0 0 auto;
+  z-index: 231;
+}
+.header_line {
+  width: 18px;
+  height: 2px;
+  background: #000;
+  display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #FFFFFF;
+  font-family: "Onest";
+  font-size: 16px;
+  font-weight: 400;
+  color: #646565;
+}/*# sourceMappingURL=main.css.map */
