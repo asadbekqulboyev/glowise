@@ -1,6 +1,25 @@
-li{list-style: none;}
-a{text-decoration: none;}
-.container{
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
     max-width: 1360px;
     margin: 0 auto;
+    padding: 0 10px;
+}
+
+.section_title {
+    color: #282929;
+    font-size: 42px;
+    font-weight: 700;
+    @media ($tablet-mobile) {
+    font-size: 36px;
+    }
+    @media ($mobile) {
+    font-size: 26px;
+    }
 }

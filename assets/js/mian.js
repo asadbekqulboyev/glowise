@@ -1,6 +1,14 @@
 $(document).ready(function(){
-    // header
-    $('.header .toggle_menu').click(function(){
-        $(this).toggleClass('is-active');
+    // header mopbile show
+    $('.header .header_hamburger').click(function(){
+        $('.mobile_menu').addClass('is-active')
+    })
+
+    $('.link_click').click(function(){
+        $(this).next().slideToggle()
+    })
+    // mobile menu exit
+    $('.exit_active').click(function(){
+        $('.mobile_menu').removeClass('is-active')
     })
 })
